@@ -4,12 +4,9 @@ namespace Regex_PIN_code_validation;
 
 public class PinCodeValidator
 {
-    public static bool Validator(string code)
+    public static bool Validate(string code)
     {
         string pattern = @"^(?=.*q)(\S{6}|\S{10})$";
-        var regex = Regex.IsMatch(code, pattern);
-        Console.WriteLine($"{code} --> {regex}");
-
-        return regex;
+        return Regex.IsMatch(code, pattern);
     }
 }

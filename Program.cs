@@ -1,5 +1,5 @@
 ﻿using Regex_PIN_code_validation;
 
-PinCodeValidator.Validator("12345q");
-PinCodeValidator.Validator("12345");
-PinCodeValidator.Validator("045654q345");
+Console.WriteLine($"{"12345q"} --> {PinCodeValidator.Validate("12345q")}");
+Console.WriteLine($"{"12345"} --> {PinCodeValidator.Validate("12345")}");
+Console.WriteLine($"{"045654q345"} --> {PinCodeValidator.Validate("045654q345")}");
